@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  background: #121214;
+}
+main {
+  color: white;
+}
+main > div {
+  background-color: #202024;
+  border-radius: 8px;
+  gap: 1.5rem;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 36.9rem);
+  grid-template-rows: repeat(2,50.8rem);
+  place-content: center;
+  gap: 4rem 6rem;
+  font-family: "Mulish", sans-serif;
+}
+p {
+  font-size: 2rem;
+  font-family: "Mulish", sans-serif;
+}
+header > p, h1 {
+  color: white;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-block: 2.4rem;
+  margin-left: 3.2rem;
+}
+img {
+  border-radius: 8px 8px 0 0;
+  margin: 2px;
+}
+h1 {
+  font-size: 5.83rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  color: #02799D;
+}
+header > p {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+header {
+  margin: 7.3rem 0 6.3rem 10rem;
+}
+div > p {
+  margin-inline: 3.2rem;
+  margin-bottom: 3.2rem;
+}

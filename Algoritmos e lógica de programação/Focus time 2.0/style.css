@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+body {
+  display: grid;
+  place-content: center ;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 9.2rem;
+}
+html.rain body {
+  background-image: url('./assets/rain.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: 0.5s;
+}
+html.rain.darkMode body {
+  background-image: url(./assets/night-rain.webp);
+}
+html.forest body {
+  background-image: url('./assets/forest.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: 0.5s;
+}
+html.forest.darkMode body {
+  background-image: url(./assets/night-forest.webp);
+}
+html.coffee body {
+  background-image: url('./assets/coffee.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: 0.5s;
+}
+html.coffee.darkMode body {
+  background-image: url(./assets/night-coffee.jpeg);
+}
+html.fire body {
+  background-image: url('./assets/fire.webp');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: 0.5s;
+}
+html.fire.darkMode body {
+  background-image: url(./assets/night-fire.jpeg);
+}
+
+main {
+  display: flex;
+  gap: 10rem;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 20px;
+} 
+
+#theme-controls {
+  display: grid;
+  grid-template-columns: repeat(2,15rem);
+  grid-template-rows: repeat(2,15rem);
+  gap: 3.5rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+#theme-controls button {
+  background-color: #E1E1E6;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#theme-controls button:hover {
+  background-color: #02799D;
+  scale: 1.05;
+  #icon {
+    color: white;
+  }
+}
+#clock-icon {
+  background: none;
+}
+
+#icon {
+  font-size:  5.5rem;
+  font-weight: 500;
+}
+
+#clock {
+  font-weight:600;
+  font-size: 11rem;
+  color: #323238;
+  display: flex;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#clock-controls{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#clock-icon {
+  font-size: 3.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+  font-size: 5rem;
+  background: none;
+}
+
+.darkMode {
+  background-color: #060202;
+  main {
+    background-color: #211e1e;
+  }
+  button {
+    color: white;
+    background: none;
+  }
+  #theme-controls button {
+    color: black;
+  }
+  span {
+    color: white;
+  }
+}
+
+.acessibility {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  appearance: none;
+}
+
+#mode {
+  all: initial;
+  font-size: 5rem;
+}
+#iconToggle {
+  cursor: pointer;
+}
+html.darkMode #iconToggle{
+  color: white;
+}
+
+.running .ph-play-circle,
+.running .ph-clock,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle
+ {
+  display: none;
+}

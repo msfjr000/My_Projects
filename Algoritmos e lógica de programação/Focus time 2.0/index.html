@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./js/index.js" ></script>
+  
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>Focus timer 2.0</title>
+</head>
+<body id="principal">
+  <main>
+
+<section>
+
+  <div data-action="clock" id="clock">
+      <span id="minutes">25</span>
+      <span>:</span>
+      <span id="seconds" >00</span>
+  </div>
+
+  <div data-action="clock-controls" id="clock-controls">
+
+    <button data-action="play" id="clock-icon" class="ph-bold ph-play-circle">
+      <span class="acessibility">Iniciar Temporizador</span>
+    </button>
+
+    <button data-action="pause" id="clock-icon" class="ph-bold ph-pause-circle">
+      <span class="acessibility">Pausar Temporizador</span>
+    </button>
+
+    <button data-action="reset" id="clock-icon" class="ph-bold ph-stop-circle">
+      <span class="acessibility">Reiniciar contador</span>
+    </button>
+
+    <button data-action="set" id="clock-icon" class="ph-bold ph-clock">
+      <span class="acessibility">Ajustar contador</span>
+    </button>
+
+    <button data-action="plus" id="clock-icon" class="ph-bold ph-plus-circle">
+      <span class="acessibility">Adicionar 5 minutos ao contador</span>
+    </button>
+
+    <button data-action="minus" id="clock-icon" class="ph-bold ph-minus-circle">
+      <span class="acessibility">Reduzir 5 minutos ao contador</span>
+    </button>
+
+  </div>
+
+</section>
+
+<button id="mode">
+    <i data-action="click12" id="iconToggle" class="ph-light ph-moon-stars"></i>
+    <span class="acessibility">Ativar/desativar darkmode</span>
+  </button>
+
+  <div data-action="theme-controls" id="theme-controls">
+  
+  <button data-action="forest" id="forest">
+    <span class="acessibility">Ativar som e plano de fundo floresta</span>
+    <i data-action="forest" id="icon" class="ph-light ph-tree"></i>
+  </button>
+ 
+  <button data-action="rain" id="rain">
+    <span class="acessibility">Ativar som e plano de fundo chuva</span> 
+    <i data-action="rain" id="icon" class="ph-light ph-cloud-snow"></i>
+  </button>
+ 
+  
+  <button data-action="coffee" id="coffee">
+    <span class="acessibility">Ativar som e plano de fundo cafeteria</span>
+    <i data-action="coffee" id="icon" class="ph-light ph-coffee"></i>
+  </button>
+
+  
+  <button data-action="fire" id="fire">
+    <span class="acessibility">Ativar som e plano de fundo lareira</span>
+    <i data-action="fire" id="icon" class="ph-light ph-fire"></i>
+  </button>
+
+
+</div>
+</main>
+</body>
+</html>

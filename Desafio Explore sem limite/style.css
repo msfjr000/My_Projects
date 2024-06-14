@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-blue: #312D64;
+}
+:root {
+  font-size: 62.5%;
+}
+#group {
+  display: flex;
+  flex-direction: column;
+}
+#first img:first-child {
+  width: 100%;
+}
+#second img:last-child {
+  margin-top: 30px;
+  margin-bottom: 90px;
+  animation: lateral 2s infinite reverse  cubic-bezier(0.4, 0, 0, 1.35);
+}
+#second {
+  margin: auto;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.7rem;
+  color: #B52184;
+}
+#second h1 {
+  font-weight: 900;
+}
+#second p {
+  color: var(--color-blue);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+section {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 30rem;
+  grid-template-rows: repeat(3,30rem);
+  gap: 35px;
+  background-color: var(--color-blue);
+  justify-content: center;
+}
+section div {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+section div:hover {
+  animation: appear 2s;
+}
+section h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 10px 0 5px 0;
+}
+section div p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  color: var(--color-blue);
+  font-size: 1.5rem;
+}
+section div img{
+  width: 8rem;
+}
+section div h1{
+  color: #B52184;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  margin-block: 50px;
+}
+aside h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #B52184;
+  margin-left: 4px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 20px;
+}
+input {
+  width: 28.6rem;
+  height: 35px;
+  border-radius: 10px;
+  border: 2px solid  var(--color-blue);
+  color: var(--color-blue);
+}
+#YourName {
+  background-image: url(./images/person.png);
+  background-size: 20px 20px; 
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 30px;
+}
+#Email {
+  background-image: url(./images/arroba.png);
+  background-size: 20px 20px; 
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 30px;
+
+}
+input::placeholder {
+  font-family: "Mulish", sans-serif;
+  color: #312D64;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+textarea::placeholder {
+  font-family: "Mulish", sans-serif;
+  color: #312D64;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+form div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+#msg {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+textarea {
+  border: 2px solid var(--color-blue);
+  border-radius: 10px;
+  padding-left: 5px;
+}
+button {
+ width: 160px;
+ padding: 18px;
+ border-radius: 10px;
+ border: 1px solid var(--color-blue);
+ background-color: var(--color-blue);
+ color: white;
+ font-family: "Mulish", sans-serif;
+ font-weight: bold;
+ margin-left: 4px;
+}
+footer {
+  background-color: var(--color-blue);
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-block: 20px;
+}
+aside #stars {
+  display: none;
+}
+@keyframes lateral {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+@media (min-width:1025px) {
+  #first {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #first img:first-child {
+    min-width: 700px;
+    max-width: 950ox;
+  }
+  #group {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  #second {
+    text-align: start;
+  }
+  #second img:last-child {
+   margin-bottom: -220px;
+  }
+  #second p{
+    font-size: 4rem;
+  }
+  #second h1 {
+    font-size: 7rem;
+  }
+  section {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,36.6rem);
+    grid-template-rows: 44.8rem;
+    gap: 100px;
+    background-color: var(--color-blue);
+    justify-content: center;
+  }
+  aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+  #stars {
+
+    justify-self: end;
+  }
+  form {
+    width: 50rem;
+    margin-left: 10rem;
+  }
+  form h1 {
+    font-size: 4rem;
+  }
+  input {
+    width: 50rem;
+  }
+  text-area{
+    width: 50rem;
+  }
+  section div h1 {
+    font-size: 2.5rem;
+  }
+  section div img{
+    width: 9.5rem;
+  }
+  section div p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  aside #stars {
+    display: flex;
+  }
+}

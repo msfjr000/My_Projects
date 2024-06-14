@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --percent: 10%;
+}
+body {
+  background: rgb(25,3,97);
+  background: linear-gradient(45deg, rgba(25,3,97,1) 0%, rgba(25,3,97,1) 19%, rgba(123,9,183,1) 48%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+div {
+  background-color: white;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 5px;
+  box-shadow: 5px 9px 23px 6px rgba(0,0,0,0.65);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+.screen1 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #34355B;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.screen1 img:hover {
+  animation: 0.2s shake infinite;
+}
+.screen2 h1{
+  font-family: "Montserrat", sans-serif;
+  color: #34355B;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.screen2 {
+  height: 60rem;
+  justify-content: space-between;
+  padding-block: 40px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.screen2 div {
+  width: 30rem;
+  background-color: #E4EDF1;
+  margin-bottom: 70px;
+  height: 16rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(400%);
+  animation: 1s appear forwards;
+}
+.screen2 p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+button {
+  background-color: #FF9500;
+  color: #FFFFFF;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 23rem;
+  padding: 20px 0 20px 0;
+  border-radius: 5px;
+}
+@keyframes shake {
+  0% {margin-left: 0; rotate: 1deg;}
+  25% {margin-left: 5px; rotate: -1deg;}
+  50% {margin-left: 0; rotate: 1deg;}
+  75% {margin-left: -5px; rotate: -1deg;}
+    100% {margin-left: 0; rotate: 1deg;}
+}
+
+@keyframes appear {
+  0%{transform: translateY(0%);scale: 0;}
+  10%{transform: translateY(-10%);scale: 0.2;}
+  20%{transform: translateY(-20%);scale: 0.3;}
+  30%{transform: translateY(-30%);scale: 0.4;}
+  40%{transform: translateY(-40%);scale: 0.5;}
+  50%{transform: translateY(-50%);scale: 0.6}
+  60%{transform: translateY(-60%);scale: 0.7;}
+  70%{transform: translateY(-70%);scale: 0.8;}
+  80%{transform: translateY(-80%);scale: 0.9;}
+  90%{transform: translateY(-90%);scale: 0.95;}
+  100%{transform: translateY(-100%);scale: 1;}
+}
+.hide {
+  display: none;
+}

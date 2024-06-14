@@ -1,0 +1,114 @@
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  width: 100vh;
+}
+nav {
+  display: flex;
+  text-align: center;
+}
+#treineme {
+  margin-top: 65px;
+  margin-left: 24%;
+  font-family: 'Inter', sans-serif;
+  color: #89C5CC;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+#opacidade{
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  color: #1F1534;
+  width: 100vh;
+  margin-left: 30%;
+  margin-top: 65px;
+  opacity: 0.5;
+}
+#subtitulo {
+  font-size: 49px;
+  font-family: 'Mulish', sans-serif;
+  line-height: 56px;
+  margin-bottom: 40px;
+}
+#performance {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #7D7987;
+  line-height: 28px;
+}
+#subtitulo strong {
+  color: #89C5CC;
+}
+footer {
+ text-align: center;
+ position: relative;
+ margin-top: 14%;
+ font-family: 'Open Sans', sans-serif;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+#balls {
+  position: absolute;
+  left: 95%;
+}
+main {
+  margin-top: 6%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 102px;
+}
+#fitness {
+  width: 417px;
+  height: 433.64px;
+}
+#balls {
+ position: fixed;
+ right: 0;
+ bottom: 0;
+}
+#linkzada {
+  width: 173px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+ul a:hover {
+  font-weight: bold;
+  opacity: 1;
+  color: #000;
+}
+button {
+  width: 179px;
+  height: 56px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: #69B99D;
+  margin-top: 40px;
+}
+button a{
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}

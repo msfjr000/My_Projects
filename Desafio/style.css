@@ -1,0 +1,70 @@
+footer img {
+  width: 1024px;
+  height: 100px;
+}
+div ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 42px;
+  padding: 0;
+  margin-top: 16px;
+}
+div ul li a {
+  text-decoration: none;
+  color: #3F3D56;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#line {
+  border: 1px #ECEFF2 solid;
+  width: 391px; 
+  margin: auto;
+
+}
+div {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+#mulher {
+  width: 350px;
+  height: 238px;
+}
+main {
+  margin-top: 64px;
+}
+/* Local do texto abaixo */   
+#destino {
+  font-family: 'Dosis', sans-serif;
+  font-size: 32px;
+  color: #3F3D56;
+}
+#destino strong {
+  color: #EE24FF;
+}
+#pacotes{
+  font-family: 'Open Sans', sans-serif;
+  color: #3F3D56;
+  font-size: 15px;
+  line-height: 22px;
+}
+#preços {     
+  font-family: 'Open Sans', sans-serif;
+  color: #3F3D56;
+  font-size: 15px;
+  line-height: 22px;
+}
+#ofertas{
+  font-family: 'Open Sans', sans-serif;
+  color: #3F3D56;
+  font-size: 15px;
+}
+#tamanho {
+  width: 540px;
+}
